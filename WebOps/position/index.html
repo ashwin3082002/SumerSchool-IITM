@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Position
+    1. Static (Default)
+    2. Absolute : It does not leave a gap and moves relative to its first parent div
+    3. Relative: It leavs a gap and moves relative to its old Position
+    4. Sticky: It sticks to its postion and moves with the page when scrolled
+    5. Fixed: It is fixed permanently to the postion -->
+    <style>
+        .parent{
+            padding: 5px;
+            background-color: blue;
+        }
+        .child-one{
+            background-color: green;  
+        }
+        .child-two{
+            background-color: red;
+        }
+        .child-three{
+            background-color: pink;
+        }
+        .child{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child-one child">One</div>
+        <div class="child-two child">Two</div>
+        <div class="child-three child">Three</div>
+    </div>
+</body>
+</html>
